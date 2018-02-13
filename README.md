@@ -30,4 +30,5 @@ keterangan: largestPrime adalah nama fungsi javascript dan '..src/solution' adal
 npm run test
 ```
 maka akan muncul gambar seperti berikut:
+
 ![Images](https://github.com/rullyindraa/project-euler-problem-3/blob/master/test/Screen%20Shot%20Test.png)
