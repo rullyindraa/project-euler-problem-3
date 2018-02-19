@@ -15,7 +15,7 @@ npm i --save-dev jest-each
 
 2. Make new directory named test, then add file solution.test.js
 ```
-onst each= require('jest-each');
+const each= require('jest-each');
 
 const largestPrime = require('../src/solution');
 
