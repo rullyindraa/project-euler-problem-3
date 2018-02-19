@@ -5,30 +5,42 @@ What is the largest prime factor of the number 600851475143 ?
 
 <https://projecteuler.net/problem=3>
 
-# Cara Testing Program
-1. Install jest dengan cara masuk ke direktori project lalu mengetikkan perintah:
+# Testing
+1. Install `jest` and `jest-each` into project directory with this command:
 ```
 npm install --save-dev jest
+
+npm i --save-dev jest-each
 ```
 
-2. Buat direktori test, lalu tambahkan file namafile.test.js
+2. Make new directory named test, then add file solution.test.js
 ```
+onst each= require('jest-each');
+
 const largestPrime = require('../src/solution');
-test('faktor bilangan prima terbesar dari 600851475143 adalah', () => {
-  expect(largestPrime(600851475143)).toBe(6857);
-})
+
+describe('.largestPrime()', () => {
+  each([
+    [600851475143, 6857],
+    [13195, 29],
+    [49, 7],
+  ]).test('make sure the output is correct for the given sample', (a, expected) => {
+      expect(largestPrime(a)).toBe(expected);
+    });
+});
 ```
-keterangan: largestPrime adalah nama fungsi javascript dan '..src/solution' adalah nama file yang akan di test.
+largestPrime is function name and '..src/solution' is name file to be tested.
 
 3. Edit file package.json:
 ```
 "test" = "jest"
 ```
 
-4. Lalu testing dengan cara:
+4. Test the program with this command
 ```
 npm run test
 ```
-maka akan muncul gambar seperti berikut:
 
-![Images](https://github.com/rullyindraa/project-euler-problem-3/blob/master/test/Screen%20Shot%20Test.png)
+then the picture will appear as follows
+
+![Images](https://github.com/rullyindraa/project-euler-problem-3/blob/master/test/test-jest-each.png)
