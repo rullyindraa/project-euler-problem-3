@@ -3,7 +3,7 @@ function largestPrime(a) {
     while (a != factor) {
       if (a % factor === 0) {
         a = a / factor; 
-      }else{
+      } else {
         factor++;
       }
     }
