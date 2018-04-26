@@ -1,6 +1,6 @@
 # Project Euler Problem #3
 
-[![CircleCI](https://circleci.com/gh/rullyindraa/project-euler-problem-3/tree/master.svg?style=svg)](https://circleci.com/gh/rullyindraa/project-euler-problem-3/tree/master)
+[![CircleCI](https://circleci.com/gh/rullyindraa/project-euler-problem-3/tree/master.svg?style=shield)](https://circleci.com/gh/rullyindraa/project-euler-problem-3/tree/master)
 
 The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143 ?
